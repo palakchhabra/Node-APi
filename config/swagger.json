@@ -1,0 +1,39 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "Api Documentation",
+      "description": "",
+      "version": "1.0"
+    },
+    "schemes": ["http", "https"],
+    "produces": ["application/json"],
+    "host": "localhost:3000",
+    "basePath": "/",
+    "paths": {
+      "/getAllData": {
+        "get": {
+          "x-swagger-router-controller": "middleware-name1",
+          "operationId": "",
+          "tags": ["getAllData"],
+          "description": "Api For Get All Data Of Client",
+          "parameters": [],
+          "responses": {}
+        }
+      },
+      "/postAllData": {
+        "post": {
+          "x-swagger-router-controller": "middleware-name1",
+          "operationId": "",
+          "tags": ["postAllData"],
+          "description": "POST Data with  id and name key",
+          "parameters": [{
+            "in": "body",
+            "name": "body"
+          }],
+          "responses": {}
+        }
+      }
+    }
+  }
+ 
+ 
