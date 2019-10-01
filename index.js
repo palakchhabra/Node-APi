@@ -18,3 +18,9 @@ app.get('/getAllData',(req,res)=>{
 app.post('/postAllData',(req,res)=>{
     res.json({message:"Hi I am from 3000 PORT",id:req.body.id,name:req.body.name})
  })
+
+
+
+ app.put('/updateSingleData/:id',(req,res)=>{
+    res.json({message:"Hi I am from 3000 PORT",id:req.body.id,name:req.body.name})
+ })
